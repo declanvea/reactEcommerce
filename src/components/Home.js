@@ -19,12 +19,12 @@ export default class Home extends React.Component {
       };
     return (
       <div className="container">
-        <Jumbotron style={{backgroundColor:'white', marginTop:'10px'}}>
-          <h1 className="display-3" style={{fontFamily: 'cursive', textAlign:'center', margin:'30px', color:'#000066'}}>Welcome to the <span style={{textShadow: '2px 0 red, 0 2px red, 2px 0 red, 0 2px red'}}>PGA Tour</span> Store!</h1>
+        <Jumbotron style={{backgroundColor:'#013174', marginTop:'10px'}}>
+          <h1 className="display-3" style={{fontFamily: 'cursive', textAlign:'center', margin:'30px', color:'white'}}>Welcome to the <span style={{color:'white', textShadow: '2px 0 #000066, 0 2px #000066, 2px 0 #000066, 0 2px #000066'}}>PGA</span> <span style={{color:'red', textShadow: '2px 0 white, 0 2px white, 2px 0 white, 0 2px white'}}>Tour</span> Store!</h1>
           <Slider {...settings}>
-            <div style={{display:'flex', justifyContent:'center'}}><img src="http://www.product-reviews.net/wp-content/uploads/Masters-Golf-2013-apps-for-schedule-and-live-streams.jpg" alt='img1'/></div>
-            <div style={{display:'flex', justifyContent:'center'}}><img src="http://res.cloudinary.com/usga/image/upload/c_fill,g_face,q_70,w_800/v1/usga/images/article-splash/2016/AS_ShinnecockHillsHole1672.jpg" alt='img2'/></div>
-            <div style={{display:'flex', justifyContent:'center'}}><img src="http://blog.williamhill.com.au/wp-content/files/sites/13/2015/07/britishopen.jpg" alt='img3'/></div>
+            <div style={{display:'flex', justifyContent:'center'}}><img style={{borderRadius: '0.3rem'}} src="http://www.product-reviews.net/wp-content/uploads/Masters-Golf-2013-apps-for-schedule-and-live-streams.jpg" alt='img1'/></div>
+            <div style={{display:'flex', justifyContent:'center'}}><img style={{borderRadius: '0.3rem'}} src="http://res.cloudinary.com/usga/image/upload/c_fill,g_face,q_70,w_800/v1/usga/images/article-splash/2016/AS_ShinnecockHillsHole1672.jpg" alt='img2'/></div>
+            <div style={{display:'flex', justifyContent:'center'}}><img style={{borderRadius: '0.3rem'}} src="http://blog.williamhill.com.au/wp-content/files/sites/13/2015/07/britishopen.jpg" alt='img3'/></div>
           </Slider>
           </Jumbotron>
       </div>
