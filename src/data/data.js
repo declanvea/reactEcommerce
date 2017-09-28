@@ -93,7 +93,7 @@ export const MastersMerch = [
           id : 4,
           img: 'https://shop.theopen.com/getmetafile/77940e1e-619b-4302-9a5f-1de82b9c8a0d/image.aspx?width=1024',
           item : '1st Prestwick Tri-fold Towel in Black',
-          price : '$10',
+          price : '$10.00',
           description : 'Black velour trifold towel, decorated with a large tonal The Open 1st Prestwick logo in gold.  Highly durable and easy to clean. The towel features a carabiner for easy attachment to a golf bag.'
         }
       ]

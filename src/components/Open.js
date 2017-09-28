@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import { Jumbotron, Card, CardImg, CardText, CardBlock,
-  CardTitle, CardSubtitle } from 'reactstrap';
+  CardTitle, CardSubtitle, Container, Col, Row } from 'reactstrap';
 import {OpenMerch} from '../data/data';
 
 
@@ -14,10 +14,15 @@ export default class Open extends React.Component {
         <div style={{display:'flex', justifyContent:'center'}}>
           <img style={{width: '40%', height:'60%', borderRadius: '0.3rem'}} src="https://fthmb.tqn.com/rF6UhB8DAnQ_hDA7n7h3XTFgqNs=/3708x2512/filters:no_upscale():fill(FFCC00,1)/about/claret-jug-open-championship-56a3d7053df78cf7727f734a.jpg" alt="claret jug"/>
         </div>
+        </Jumbotron>
 
+
+        <Container>
+        <Row>
         {OpenMerch.map((merch, id) => {
-          return  <div key={id}>
-            <Card style={{width:'30%', margin:'15px', padding:'10px'}}>
+          return  (
+          <Col md='6' lg='4'>
+            <Card key={id} style={{margin:'15px', padding:'10px'}}>
               <CardBlock>
                 <CardTitle>{merch.item}</CardTitle>
                 <CardSubtitle>{merch.price}</CardSubtitle>
@@ -26,10 +31,11 @@ export default class Open extends React.Component {
               <CardBlock>
                 <CardText>{merch.description}</CardText>
               </CardBlock>
-            </Card>
-          </div>
-          })}
-        </Jumbotron>
+              </Card>
+            </Col>
+        )})}
+        </Row>
+        </Container>
       </div>
     );
   }
